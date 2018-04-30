@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0C532B42208EA6BB00ADA65A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C532B41208EA6BB00ADA65A /* main.swift */; };
 		0C532B49208EA8FE00ADA65A /* 01_tinh_tong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C532B48208EA8FE00ADA65A /* 01_tinh_tong.swift */; };
+		0C6E03542096DBBE00DC949F /* 05_array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E03532096DBBE00DC949F /* 05_array.swift */; };
+		0C6E03562096DBE900DC949F /* 06_ma_tran_vuong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E03552096DBE900DC949F /* 06_ma_tran_vuong.swift */; };
+		0C6E03582096DC0300DC949F /* truu_tuong_hoa_du_lieu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E03572096DC0300DC949F /* truu_tuong_hoa_du_lieu.swift */; };
+		0C6E035A2096DC1A00DC949F /* mang_cau_truc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E03592096DC1A00DC949F /* mang_cau_truc.swift */; };
+		0C6E035C2096DC3900DC949F /* 10_de_quy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E035B2096DC3900DC949F /* 10_de_quy.swift */; };
+		0C6E035E2096DC6400DC949F /* ky_thuat_lap_trinh_con_tro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E035D2096DC6400DC949F /* ky_thuat_lap_trinh_con_tro.swift */; };
+		0C6E03602096DC7900DC949F /* 12_danh_sach_lien_ket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E035F2096DC7900DC949F /* 12_danh_sach_lien_ket.swift */; };
+		0C6E03622096DC9100DC949F /* 13_cay_nhi_phan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E03612096DC9100DC949F /* 13_cay_nhi_phan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +35,14 @@
 		0C532B3E208EA6BB00ADA65A /* 01.BasicSyntax */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.BasicSyntax; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C532B41208EA6BB00ADA65A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0C532B48208EA8FE00ADA65A /* 01_tinh_tong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 01_tinh_tong.swift; sourceTree = "<group>"; };
+		0C6E03532096DBBE00DC949F /* 05_array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 05_array.swift; sourceTree = "<group>"; };
+		0C6E03552096DBE900DC949F /* 06_ma_tran_vuong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 06_ma_tran_vuong.swift; sourceTree = "<group>"; };
+		0C6E03572096DC0300DC949F /* truu_tuong_hoa_du_lieu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = truu_tuong_hoa_du_lieu.swift; sourceTree = "<group>"; };
+		0C6E03592096DC1A00DC949F /* mang_cau_truc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mang_cau_truc.swift; sourceTree = "<group>"; };
+		0C6E035B2096DC3900DC949F /* 10_de_quy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10_de_quy.swift; sourceTree = "<group>"; };
+		0C6E035D2096DC6400DC949F /* ky_thuat_lap_trinh_con_tro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ky_thuat_lap_trinh_con_tro.swift; sourceTree = "<group>"; };
+		0C6E035F2096DC7900DC949F /* 12_danh_sach_lien_ket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12_danh_sach_lien_ket.swift; sourceTree = "<group>"; };
+		0C6E03612096DC9100DC949F /* 13_cay_nhi_phan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13_cay_nhi_phan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,14 @@
 			children = (
 				0C532B41208EA6BB00ADA65A /* main.swift */,
 				0C532B48208EA8FE00ADA65A /* 01_tinh_tong.swift */,
+				0C6E03532096DBBE00DC949F /* 05_array.swift */,
+				0C6E03552096DBE900DC949F /* 06_ma_tran_vuong.swift */,
+				0C6E03572096DC0300DC949F /* truu_tuong_hoa_du_lieu.swift */,
+				0C6E03592096DC1A00DC949F /* mang_cau_truc.swift */,
+				0C6E035B2096DC3900DC949F /* 10_de_quy.swift */,
+				0C6E035D2096DC6400DC949F /* ky_thuat_lap_trinh_con_tro.swift */,
+				0C6E035F2096DC7900DC949F /* 12_danh_sach_lien_ket.swift */,
+				0C6E03612096DC9100DC949F /* 13_cay_nhi_phan.swift */,
 			);
 			path = 01.BasicSyntax;
 			sourceTree = "<group>";
@@ -123,8 +147,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C6E03622096DC9100DC949F /* 13_cay_nhi_phan.swift in Sources */,
 				0C532B42208EA6BB00ADA65A /* main.swift in Sources */,
 				0C532B49208EA8FE00ADA65A /* 01_tinh_tong.swift in Sources */,
+				0C6E035A2096DC1A00DC949F /* mang_cau_truc.swift in Sources */,
+				0C6E03562096DBE900DC949F /* 06_ma_tran_vuong.swift in Sources */,
+				0C6E03542096DBBE00DC949F /* 05_array.swift in Sources */,
+				0C6E03602096DC7900DC949F /* 12_danh_sach_lien_ket.swift in Sources */,
+				0C6E03582096DC0300DC949F /* truu_tuong_hoa_du_lieu.swift in Sources */,
+				0C6E035E2096DC6400DC949F /* ky_thuat_lap_trinh_con_tro.swift in Sources */,
+				0C6E035C2096DC3900DC949F /* 10_de_quy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +274,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33L9A8J22X;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -252,6 +285,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33L9A8J22X;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};

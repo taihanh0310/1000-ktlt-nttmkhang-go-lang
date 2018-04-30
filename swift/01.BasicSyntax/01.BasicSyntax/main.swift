@@ -13,4 +13,12 @@ var str = "Hello"
 print(str)
 
 print("====== Tinh tong so nguyen ===========")
-print(tinhTongSoNguyen(number: 2))
+print(tinhTongSoNguyen(number: 10))
+
+print("====== Tinh tong binh phuong cac so nguyen ===========")
+
+print(tinhTongSoNguyenBinhPhuong(number: 20))
+
+print(tinhTongSoNguyenBinhPhuong2(number: 20))
+
+print(tinhTongCacSoThapPhan(number: 10))
