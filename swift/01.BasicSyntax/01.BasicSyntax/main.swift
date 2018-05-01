@@ -8,17 +8,50 @@
 
 import Foundation
 
-print("Hello, World!")
-var str = "Hello"
-print(str)
+//print("Hello, World!")
+//var str = "Hello"
+//print(str)
+//
+//print("====== Tinh tong so nguyen ===========")
+//print(tinhTongSoNguyen(number: 10))
+//
+//print("====== Tinh tong binh phuong cac so nguyen ===========")
+//
+//print(tinhTongSoNguyenBinhPhuong(number: 20))
+//
+//print(tinhTongSoNguyenBinhPhuong2(number: 20))
+//
+//print(tinhTongCacSoThapPhan(number: 10))
 
-print("====== Tinh tong so nguyen ===========")
-print(tinhTongSoNguyen(number: 10))
+print("Control flow")
+print("01: Each")
+let individualScore = [75,23,45,46,8,23]
+var teamScore = 0
 
-print("====== Tinh tong binh phuong cac so nguyen ===========")
+for score in individualScore {
+    if(score > 50){
+        teamScore += 3
+    }
+    else{
+        teamScore += 1
+    }
+}
 
-print(tinhTongSoNguyenBinhPhuong(number: 20))
+print(teamScore)
 
-print(tinhTongSoNguyenBinhPhuong2(number: 20))
+print("Kiem tra option")
+var optionString: String? = "Hello"
+print(optionString == nil)
 
-print(tinhTongCacSoThapPhan(number: 10))
+var optionName: String? = "John Appleased"
+
+print("Toan tu 3 ngoi")
+let nickName: String? = nil
+let fullName: String = "Hanh Nguyen"
+// kiem tra nickname = null thi in ra default value
+let informationGreeting = "Hi \(nickName ?? fullName)"
+
+print(informationGreeting)
+
+print("===================SWITCH================")
+
