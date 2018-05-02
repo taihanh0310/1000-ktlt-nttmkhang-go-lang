@@ -1,8 +1,8 @@
 //
-//  05_array.swift
-//  01.BasicSyntax
+//  main.swift
+//  05_array
 //
-//  Created by Hanh Nguyen on 4/30/18.
+//  Created by Hanh Nguyen on 5/2/18.
 //  Copyright © 2018 Hanh Nguyen. All rights reserved.
 //
 
@@ -12,14 +12,14 @@ let intArr: [Int] = [266,905,902,783,506,670,397,255,485,700,96,-26,995,272,515,
 
 
 func findMax(arr: [Int]) -> Int {
-	var max: Int = 0
-
-	for item in arr{
-		if item > max {
-			max = item
-		}
-	}
-	return max
+    var max: Int = 0
+    
+    for item in arr{
+        if item > max {
+            max = item
+        }
+    }
+    return max
 }
 
 let resultFindMax = findMax(arr: intArr)
@@ -34,12 +34,12 @@ func findMinIndex(arr: [Int]) -> (minIndex: Int, minValue: Int) {
     let arrLenght: Int = arr.count
     
     for index in 0..<arrLenght {
-		if arr[index] < minValue {
-			minValue = arr[index]
-			minIndex = index
-		}
-	}
-	return (minIndex, minValue)
+        if arr[index] < minValue {
+            minValue = arr[index]
+            minIndex = index
+        }
+    }
+    return (minIndex, minValue)
     
 }
 
@@ -77,3 +77,5 @@ func kiemTraChanNhoHon2004(arr: [Int]) -> Bool {
 let resultKiemTraChanNhoHon2004 = kiemTraChanNhoHon2004(arr: intArr)
 
 print("So chan nho hon 2004 la: \(resultKiemTraChanNhoHon2004)")
+
+
