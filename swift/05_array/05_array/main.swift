@@ -69,18 +69,18 @@ let intArr: [Int] = [266,905,902,783,506,670,397,255,485,700,96,-26,995,272,515,
 //
 //print("So chan nho hon 2004 la: \(resultKiemTraChanNhoHon2004)")
 
-print("125.Viết hàm đếm số lượng số nguyên tố nhỏ hơn 100 trong mảng.")
-//print("Kiem tra so nguyen to: \(checkSoNguyenTo(number: 98))")
-func demSoNguyenTo(myArr: [Int]) -> Int {
-    var result = 0
-    for item in myArr {
-        if checkSoNguyenTo(number: item) {
-            result += 1
-//            print(item)
-        }
-    }
-    return result
-}
+// print("125.Viết hàm đếm số lượng số nguyên tố nhỏ hơn 100 trong mảng.")
+// //print("Kiem tra so nguyen to: \(checkSoNguyenTo(number: 98))")
+// func demSoNguyenTo(myArr: [Int]) -> Int {
+//     var result = 0
+//     for item in myArr {
+//         if checkSoNguyenTo(number: item) {
+//             result += 1
+// //            print(item)
+//         }
+//     }
+//     return result
+// }
 
 //let resultDemSoNguyenTo = demSoNguyenTo(myArr: intArr)
 //print("So luong so nguyen to co trong mang la: \(resultDemSoNguyenTo)")
@@ -97,31 +97,112 @@ func demSoNguyenTo(myArr: [Int]) -> Int {
 //    return tong
 //}
 //print("Tong cac so am la: \(tinhTongCacSoAm(myArr: intArr))")
-print("127.Viết hàm sắp xếp mảng một chiều các số thực tăng dần.")
-func sortFunc(num1: Int, num2: Int) -> Bool {
-    return num1 < num2
+// print("127.Viết hàm sắp xếp mảng một chiều các số thực tăng dần.")
+// func sortFunc(num1: Int, num2: Int) -> Bool {
+//     return num1 < num2
+// }
+
+
+// let sapXepTangDan = intArr.sorted(by: <)
+// print("Sap xep mang tang dan: \(sapXepTangDan)")
+
+// print("KỸ THUẬT NHẬP XUẤT MẢNG")
+
+// print("128.Viết hàm nhật mảng một chiều các số thực.")
+// print("129.Viết hàm nhập mảng một chiều các số nguyên")
+// print("130.Viết hàm xuất mảng một chiều các số thực.")
+// print("131.Viết hàm xuất mảng một chiều các số nguyên.")
+// print("132.Viết hàm liệt kê các giá trị chẵn trong mảng một chiều các số nguyên. ")
+// func lietKeGiaTriChan(arr: [Int]) -> [Int] {
+//     var result: [Int] = []
+//     for item in arr {
+//         if item % 2 == 0 {
+//             result.append(item)
+//         }
+//     }
+//     return result
+// }
+
+// print("Cac so chan trong mang la: \(lietKeGiaTriChan(arr: intArr))")
+print("133.Viết hàm liệt kê các vị trí mà giá trị tại đó là giá trị âm trong mảng một chiều các số thực..")
+func lietKeViTriAm(arr: [Int]) -> String {
+    let arrCount = arr.count 
+    var result: String = ""
+
+    for index in 0..<arrCount {
+        if(arr[index] < 0) {
+            print("So am: \(arr[index]), Vi tri: \(index)")
+            result.append("\(index), ") 
+        }
+    }
+
+    return result
 }
 
-let sapXepTangDan = intArr.sorted(by: <)
-print("Sap xep mang tang dan: \(sapXepTangDan)")
+print("Cac vi tri am trong mang la: \(lietKeViTriAm(arr: intArr))")
 
-print("KỸ THUẬT NHẬP XUẤT MẢNG")
+// print("KỸ THUẬT ĐẶT LÍNH CANH CÁC BÀI TẬP CƠ BẢN")
+// print("134.Viết hàm tìm “giá trị lớn nhất” trong mảng một chiều số thực (lonnhat).")
+// func timSoLonNhatTrongMang(arr: [Int]) -> Int {
+//     var soLonNhat: Int = arr[0]
+//     // let arrCount = arr.count
+    
+//     // for index in 1..<arrCount {
+        
+//     // }
+    
+//     return soLonNhat
+// }
 
-print("128.Viết hàm nhật mảng một chiều các số thực.")
-print("129.Viết hàm nhập mảng một chiều các số nguyên")
-print("130.Viết hàm xuất mảng một chiều các số thực.")
-print("131.Viết hàm xuất mảng một chiều các số nguyên.")
-print("132.Viết hàm liệt kê các giá trị chẵn trong mảng một chiều các số nguyên. 133.Viết hàm liệt kê các vị trí mà giá trị tại đó là giá trị âm trong mảng một chiều các số thực..")
+// func timSoLonNhatTrongMang2(arr: [Int]) -> Int? {
+//     return arr.max()
+// }
 
-print("KỸ THUẬT ĐẶT LÍNH CANH CÁC BÀI TẬP CƠ BẢN")
-print("134.Viết hàm tìm “giá trị lớn nhất” trong mảng một chiều số thực (lonnhat).")
-print("135.Tìm “giá trị dương đầu tiên” trong mảng một chiều các số thực (duongdau). Nếu mảng không có giá trị dương thì trả về giá trị -1.")
-print("136.Tìm “số chẵn cuối cùng” trong mảng một chiều các số nguyên (chancuoi). Nếu mảng không có giá trị chẵn thì trả về giá trị -1.")
-print("137.Tìm “một vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất” trong mảng một chiều các số thực (vitrinhonhat).")
-print("138.Tìm “vị trí của giá trị chẵn đầu tiên” trong mảng một chiều các số nguyên (vitrichandau). Nếu mảng không có giá trị chẵn thì hàm sẽ trả về giá trị là – 1.")
-print("139.Tìm “vị trí số hoàn thiện cuối cùng” trong mảng một chiều các số nguyen (vitrihoanthiencuoi). Nếu mảng không có số hoàn thiện thì trả về giá trị - 1.")
-print("140.Hãy tìm “giá trị dương nhỏ nhất” trong mảng các số thực (duongnhonhat). Nếu mảng không có giá trị dương thì trả về giá trị không dương là – 1.")
-print("141.Hãy tìm “vị trí giá trị dương nhỏ nhất” trong mảng một chiều các số thực (vtduongnhonhat). Nếu mảng không có giá trị dương thì trả về một giá trị ngoài đoạn [0,n-1] là -1 nhằm mô tả không có vị trí nào thỏa điều kiện.")
+// func timSoLonNhatTrongMang3(arr: [Int]) -> Int? {
+//     return arr.max{a, b in a < b}
+// }
+
+// print("So lon nhat trong mang2: \(timSoLonNhatTrongMang3(arr: intArr))")
+// print("135.Tìm “giá trị dương đầu tiên” trong mảng một chiều các số thực (duongdau). Nếu mảng không có giá trị dương thì trả về giá trị -1.")
+func timSoDuongDauTienTrongMang(arr: [Int]) -> Int? {
+    return arr.first(where: {$0 > 0})
+}
+
+print("Tim duong dau tien trong mang: \(timSoDuongDauTienTrongMang(arr: intArr))")
+// print("136.Tìm “số chẵn cuối cùng” trong mảng một chiều các số nguyên (chancuoi). Nếu mảng không có giá trị chẵn thì trả về giá trị -1.")
+func timSoChanCuoiCung(arr: [Int]) -> Int? {
+    var resultArr: [Int] = []
+    for item in arr {
+        if(item % 2 == 0) {
+            resultArr.append(item)
+        }
+    }
+
+    if(resultArr.count > 0){
+        return resultArr.last
+    }
+    return -1
+}
+print("So chan cuoi trong mang2: \(timSoChanCuoiCung(arr: intArr))")
+// print("137.Tìm “một vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất” trong mảng một chiều các số thực (vitrinhonhat).")
+func indexCuaGiaTriNhoNhat(arr: [Int]) -> String {
+    // get min value
+    // get index of min value
+    // var minValue = arr.min{a, b in a < b}
+    // print(minValue)
+    
+    var result = arr.filter{$0 == 1}
+    // for index in 
+    print(result)
+    return "dsds";
+}
+// print("138.Tìm “vị trí của giá trị chẵn đầu tiên” trong mảng một chiều các số nguyên (vitrichandau). Nếu mảng không có giá trị chẵn thì hàm sẽ trả về giá trị là – 1.")
+// print("139.Tìm “vị trí số hoàn thiện cuối cùng” trong mảng một chiều các số nguyen (vitrihoanthiencuoi). Nếu mảng không có số hoàn thiện thì trả về giá trị - 1.")
+// print("140.Hãy tìm “giá trị dương nhỏ nhất” trong mảng các số thực (duongnhonhat). Nếu mảng không có giá trị dương thì trả về giá trị không dương là – 1.")
+func timSoDuongNhoNhat(arr: [Int]) -> Int? {
+    return arr.min{a, b in ((a > 0 && b > 0 && a < b))}
+}
+// print("141.Hãy tìm “vị trí giá trị dương nhỏ nhất” trong mảng một chiều các số thực (vtduongnhonhat). Nếu mảng không có giá trị dương thì trả về một giá trị ngoài đoạn [0,n-1] là -1 nhằm mô tả không có vị trí nào thỏa điều kiện.")
 
 
 
