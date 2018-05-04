@@ -206,5 +206,166 @@ func timSoDuongNhoNhat(arr: [Int]) -> Int? {
 }
 // print("141.Hãy tìm “vị trí giá trị dương nhỏ nhất” trong mảng một chiều các số thực (vtduongnhonhat). Nếu mảng không có giá trị dương thì trả về một giá trị ngoài đoạn [0,n-1] là -1 nhằm mô tả không có vị trí nào thỏa điều kiện.")
 
-
+//143.Viết hàm tìm “số chẵn đầu tiên” trong mảng các số nguyên (chandau). Nếu mảng không có giá trị chẵn thì hàm sẽ trả về giá trị không chẵn là - 1.
+//144.Tìm “số nguyên tố đầu tiên” trong mảng một chiều các số nguyên (nguyentodau). Nếu mảng không có số nguyên tố thì trả về giá trị -1.
+//145.Tìm “số hoàn thiện đầu tiên” trong mảng một chiều các số nguyên (hoanthiendau). Nếu mảng không có số hoàn thiện thì trả về giá trị -1.
+//146.Tìm giá trị âm đầu tiên trong mảng một chiều các sô thực (amdau). Nếu mảng không có giá trị âm thì trả về giá trị không âm là giá trị 1.
+//147.Tìm “số dương cuối cùng” trong mảng số thực (duongcuoi). Nếu mảng không có giá trị dương thì trả về giá trị - 1.
+//148.Tìm “số nguyên tố cuối cùng” trong mảng một chiều các số nguyên (nguyentocuoi). Nếu mảng không có số nguyên tố thì trả về giá trị -1.
+//149.Tìm “số hoàn thiện cuối cùng” trong mảng một chiều các số nguyên (hoanthiencuoi). Nếu mảng không có số hoàn thiện thì hàm sẽ trả về giá trị -1.
+//150.Hãy tìm “giá trị âm lớn nhất” trong mảng các số thực (amlonnhat). Nếu mảng không có giá trị âm thì trả về giá trị 0.
+//151.Hãy tìm “số nguyên tố lớn nhất” trong mảng một chiều các số nguyên (nguyentolonnhat). Nếu mảng không có số nguyên tố thì trả về giá trị 0.
+//152.Hãy tìm “hoàn thiện nhỏ nhất” trong mảng một chiều các số nguyên (hoanthiennhonhat). Nếu mảng không có số hoàn thiện thì trả về giá trị 0.
+//153.Hãy tìm “giá trị chẵn nhỏ nhất” trong mảng một chiều các số nguyên (channhonhat). Nếu mảng không có giá trị chẵn thì trả về giá trị không chẵn là -1.
+//154.Hãy tìm “vị trí giá trị âm lớn nhất” trong mảng các số thực (vtamlonnhat). Nếu mảng không có giá trị âm thì trả về -1.
+//
+//BÀI TẬP LUYỆN TẬP TƯ DUY
+//155.Hãy tìm giá trị trong mảng các sô thực “xa giá trị x nhất” (xanhat).Vi du: Giá trị x = 15, [24,45,23,13,43,-1], khoang cach xa nhat la 45
+//156.Hãy tìm một vị trí trong mảng một chiều các số thực mà giá trị tại vị trí đó là giá trị “gần giá trị x nhất”.
+//157.Cho mảng một chiều các sô thực, hãy tìm đoạn [a,b] sao cho đoạn này
+//chứa tất cả các giá trị trong mảng (timdoan).
+//158.Cho mảng một chiều các sô thực, hãy tìm giá trị x sao cho đoạn [-x,x]
+//chứa tất cả các giá trị trong mảng (timx).
+//159.Cho mảng một chiều các số thực hãy tìm giá trị đầu tiên lớn hơn giá trị
+//2003 (dautien). Nếu mảng không có giá trị thỏa điều kiện trên thì hàm
+//trả về giá trị là 0.
+//160.Cho mảng một chiều các số thực, hãy viết hàm tìm giá trị âm cuối cùng
+//lơn hơn giá trị -1 (cuoicung). Nếu mảng không có giá trị thỏa điều kiện trên thì hàm trả về giá trị không chẵn là 0.
+//161.Cho mảng một chiều các số nguyên, hãy tìm giá trị đầu tiên trong mảng nằm trong khoảng (x,y) cho trước (dautientrongdoan). Nếu mảng không có giá trị thỏa điều kiện trên thì hàm trả về giá trị là x.
+//162.Cho mảng một chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa hai điền kiện: có hai giá trị lân cận và giá trị tại vịt trí đó bằng tích hai gia trị lân cận. Nếu mảng không tồn tại giá trị như vậy thì hàm trả về giá trị - 1.
+//163.Tìm số chính phương đầu tiên trong mảng một chiều các số nguyên. 164.Cho mảng một chiều các số nguyên, hãy viết hàm tìm giá trị đầu tiên
+//trong mảng thỏa tính chất số gánh. (ví dụ giá trị 12321).
+//165.Hãy tìm giá trị đầu tiên trong mảng một chiều các số nguyên có chữ số
+//đầu tiên là chữ số lẻ (dauledautien). Nếu trong mảng không tồn tại giá
+//trị như vậy thì hàm sẽ trả về giá trị 0.
+//166.Cho mảng một chiều các số nguyên. Hãy viết hàm tìm giá trị đầu tiên
+//trong mảng có dạng 2k .Nếu mảng không tồn tại giá trị dạng 2k thì hàm
+//sẽ trả về giá trị 0.
+//167.Hãy tìm giá trị thỏa điều kiện toàn chữ số lẻ và là giá trị lớn nhất thỏa
+//điều kiện ấy trong mảng một chiều các số nguyên (nếu mảng không có
+//giá trị thỏa điều kiện trên thì hàm trả về giá trị 0).
+//168.Cho mảng một chiều các số nguyên. Hãy viết hàm tìm giá trị lớn nhất
+//trong mảng có dạng 5k . Nếu mảng không tồn tại giá trị dạng 5k thì hàm
+//sẽ trả về giá trị 0.
+//169.(*) Cho mảng một chiều các số nguyên. Hãy viết hàm tìm số chẵn lớn
+//nhất nhỏ hơn mọi giá trị lẻ có trong mảng.
+//170.Cho mảng một chiều các số nguyên. Hãy viết hàm tìm số nguyên tố
+//nhỏ nhất và lớn hơn mọi giá trị có trong mảng.
+//171.Cho mảng một chiều các số nguyên dương. Hãy viết hàm tìm ước
+//chung lớn nhất của tất cả các phần tử trong mảng.
+//172.Cho mảng một chiều các số nguyên dương. Hãy viết hàm tìm bội
+//chung nhỏ nhất của tất cả các phần tử trong mảng.
+//173.(*) Cho mảng một chiều các số nguyên. Hãy viết hàm tìm chữ số xuất
+//hiện ít nhất trong mảng (timchuso).
+//174.(*) Cho mảng số thực có nhiều hơn hai giá trị và các giá trị trong mảng
+//khác nhau từng đôi một. Hãy viết hàm liệt kê tất cả các cặp giá trị (a,b) trong mảng thỏa điều kiện a <= b.
+//175.(*) Cho amngr số thực có nhiều hơn hai giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm tìm hai giá trị gần nhau nhất trong mảng (gannhaunhat). Lưu ý: Mảng có các giá trị khác nhau từng đôi một còn có tên là mảng phân biệt.
+//
+//CÁC BÀI TẬP TÌM KIẾM VÀ LIỆT KÊ
+//176.Hãy liệt kê các số âm trong mảng một chiều các số thực (lietkeam). 177.Hãy liệt kê các số giá trị trong mảng một chiều các sô thực thuộc đoạn
+//[x,y] cho trước.
+//178.Hãy liệt kê các số có giá trị chẵn trong mảng một chiều các số nguyên
+//thuộc đoạn [x,y] cho trước (x, y là các số nguyên).
+//179.Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện lớn hơn trị tuyệt
+//đối của giá trị đứng liền sau nó.
+//180.Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện nhỏ hơn trị tuyệt
+//đối của giá trị đứng liền sau nó và lớn hơn giá trị đứng liền trước nó. 181.Cho mảng một chiều các số nguyên. Hãy viết hàm liệt kê các giá trị
+//chẵn có ít nhất một lân cận cũng là giá trị chẵn.
+//182.Cho mảng một chiều các ố thực. Hãy viết hàm liệt ke tất cả các giá trị
+//trong mảng có ít nhất một lân cận trái dấu với nó.
+//183.Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng một
+//chiều các số thực (lietkevitrilonnhat).
+//184.Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng một
+//chiều các số nguyên (lkvitringuyento).
+//185.Hãy liệt kê các vị trí mà giá trị tại vị trí đó là số chính phương trong
+//mảng một chiều các số nguyên.
+//186.Hãy liệt kê các vị trí trong mảng một chiều các số thực mà giá trị tại vị
+//trí đó bằng giá trị âm đầu tiên trong mảng.
+//187.Hãy liệt kê các vị trí mà giá trị tại các vị trí đó bằng giá trị dương nhỏ
+//nhất trong mảng một chiều các số thực
+//188.Hãy liệt kê các vị trí chẵn lớn nhất trong mảng một chiều các số
+//nguyên.
+//189.Hãy liệt kê các giá trị trong mảng một chiều các số nguyên tố có chữ số
+//đầu tiên là chữ số lẻ (lietketdaule).
+//190.Hãy liệt kê các giá trị có toàn chữ số lẻ trong mảng một chiều các số
+//nguyên.
+//- Facebook cá nhân: https://www.facebook.com/tugialoc
+//- Fanpage Cùng Học Lập Trình Online : https://www.facebook.com/cunghoclaptrinhonline/
+//- Group Cùng Học Lập Trình Online: https://www.facebook.com/groups/cunghoclaptrinhonline/ - Youtube Cùng Học Lập Trình Online: https://goo.gl/TtPzv3
+//- Email: tugialoc1996@gmail.com
+//
+//191.Hãy liệt kê các giá trị cực đại trong mảng một chiều các số thực. một phần tử được gọi là cực đại khi lớn hơn các phần tử lân cận.
+//192.Hãy liệt kê các giá trị trong mảng một chiều các số nguyên có chữ số đầu tiền là chữ số chẵn (liekedauchan).
+//193.Cho mảng một chiều các số nguyên. Hãy viết hàm liệt kê các giá trị trong mảng có dạng 3k thì hàm sẽ trả về giá trị 0.
+//194.Cho mảng số nguyên có nhiều hơn hai giá trị. Hãy liệt kê tất cả các cặp giá trị gần nhau nhất trong mảng (gannhaunhat).
+//195.Cho mảng số thực có nhiều hơn ba giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy liệt kê tất cả các bộ ba giá trị (a,b,c) thỏa điều kiện a = b + c với a, b, c là ba giá trị khác nhau trong mảng. Ví dụ: (6, 2, 4).
+//196.Hãy liệt kê các số âm trong mảng một chiều các số thực (lietkeam). 197.Hãy liệt kê các giá trị trong mảng các số nguyên có chữ số đầu tiên là
+//chữ số lẻ (lietkele).
+//198.Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng một
+//chiều các số thực (lietkevitrilonnhat).
+//199.Hãy liệt kê các vị trí mà giá trị đó là số nguyên tố trong mảng một
+//chiều các số nguyên (lkvitringuyento).
+//KỸ THUẬT TÍNH TỔNG 200.Tính tổng các phần tử trong mảng (tonggiatri).
+//201.Tính tổng các giá trị dương trong mảng một chiều các số thực (tongduong).
+//202.Tính tổng các giá trị có chữ số đầu tiên là chữ số lẻ trong mảng một chiều các số nguyên (tongdaule).
+//203.Tính tổng các giá trị có chữ số hàng chục là chữ số 5 có trong mảng các số nguyên (tongchuc).
+//204.Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng một chiều các số thực.
+//205.Tính tổng các giá trị lớn hơn trị tuyệt đối của giá trị đứng liền sau nó trong mảng một chiều các số thực.
+//206.Tính tổng các giá trị lớn hơn các giá trị xung quanh trong mảng một chiều các số thực (tongcucdai).
+//207.Tính tổng các phần tử “cực trị” trong mảng (tongcuctri). Một phần tử được gọi là cực trị khi nó lớn hơn hoặc nhỏ hơn các phần tử xung quanh nó.
+//208.Tính tổng các giá trị chính phương trong mảng một chiều các số nguyên (tongchinhphuong).
+//209.Tính tổng các giá trị đối xứng trong mảng các số nguyên (tongdoixung).
+//210.Tính tổng các giá trị có chữ số đầu tiên là chữ số chẵn có trong mảng các số nguyên (tongdauchan).
+//211.Tính trung bình cộng các số nguyên tố trong mảng một chiều các số nguyên (tbnguyento).
+//212.Tính trung bình cộng các số dương trong mảng một chiều các số thực (trungbinhcong).
+//213.Tính trung bình cộng các giá trị lớn hơn giá trị x trong mảng một chiều các số thực (tbclonhon).
+//214.Tính trung bình nhân các giá trị dương có trong mảng một chiều các số thực (trungbinhnhan).
+//215.(*) Tính khoảng cách trung bình giữa các giá trị trong mảng (khoangcachtb).
+//
+//KỸ THUẬT ĐẾM
+//216.Đếm số lượng số chẵn có trong mảng một chiều các ôs nguyên
+//(demchan).
+//217.Đếm số lượng giá trị dương chia hết cho 7 trong mảng một chiều các số
+//nguyên (demchiahetbay).
+//218.Đếm số lượng giá trị đối xứng trong mảng các số nguyên
+//(demdoixung).
+//219.Đếm số lần xuất hiện của giá trị x trong mảng một chiều các số thực
+//(tanxuat).
+//220.Hãy đếm số lượng giá trị có chữ số tận cùng bằng 5 trong mảng các số
+//nguyên (demtancung).
+//221.Hãy cho biết sự tương quan giữa số lượng số chẵn và số lượng số lẻ
+//trong mảng các số nguyên (tuongquanchanle)
+//- Hàm này trả về một trong ba giá trị -1, 0, và 1.
+//- Giá trị -1 có nghĩa số lượng số chẵn nhiều hơn số lẻ.
+//- Giá trị 0 có nghĩa số lượng số lẻ bằng số lượng số chẵn
+//- Giá trị 1 có nghĩa số lẻ nhiều hơn số chẵn.
+//222.Hãy đếm số lượng phần tử cùng lớn hơn hoặc nhỏ hơn các phần tử
+//xung quanh (demcutri).
+//223.Hãy đếm số lượng “số nguyên tố” có trong mảng một chiều các số
+//nguyên (demnguyento).
+//224.Hãy đếm số lượng “số hoàn thiện” có trong mảng một chiều các số
+//thực (demhoanthien).
+//225.Hãy đếm số lượng các giá trị lớn nhất có trong mảng một chiều các số
+//thực (demlonnhat).
+//226.Hãy xác định số lượng các phần tử kề nhau mà cả hai đều chẵn
+//(demkechan).
+//227.Hãy xác định số lượng các phần tử kề nhau mà cả hai số trái dấu nhau
+//(demtraidau).
+//228.Hãy xác định số lượng các phần tử kề nhau mà số đứng sau cùng dấu
+//số đứng trước và có giá trị tuyệt đối lớn hơn (demgiatri).
+//229.Hãy đếm số lượng các giá trị phân biệt có tỏng mảng (demphanbiet). 230.Hãy liệt kê tần suất xuất hiện của các giá trị xuất hiện trong mảng
+//(lietke). (Lưu ý: mỗi giá trị liệt kê một lần).
+//231.Hãy liệt kê các giá trị xuất hiện trong mảngm ột chiều các ôs nguyên
+//đúng một lần (lieketduynhat).
+//232.Hãy liệt kê các giá trị xuất hiện trong dãy quá một lần (lietke). Lưu ý:
+//mỗi giá trị liệt kê một lần.
+//vis du: [12, 43,12, 34, 43, 12, 5], cac gia tri xuat hien qua 1 lan ;a: [12, 43]
+//233. Hãy liệt kê tần suất của các giá trị xuất hiện trong dãy (lietke). Lưu ý
+//mỗi giá trị liệt kê tần suất một lần. vis du: [12, 43,12, 34, 43, 12, 5], 12 xuat hien 3 lan, 43 xuat hien 2 lan, 34 xuat hien 1 lan, 5 xuat hien 1
+//234.Cho hai mảng số thực a, b. Đếm số lượng giá trị chỉ xuất hiện một trong hai mảng (demgiatri).
+//235.Cho hai mảng a, b. Liệt kê các giá trị chỉ xuất hiện một rong hai mảng (lietke).
+//236.(*) Cho hai mảng a, b. Hãy cho biết số lần xuất hiện của mảng a trong mảng b (demsolan).
+//237.Hãy tìm một giá trị có số lần xuất hiện nhiều nhất trong mảng các số nguyên (xuathiennhieunhat).
+//238.(*) Hãy liệt kê các giá trị có số lần xuất hiện nhiều nhất trong mảng các số nguyên (lietkenhieunhat).
+//239.Hãy đếm số lượng số nguyên tố phân biệt trong mảng các số nguyên (demphanbiet).
 
