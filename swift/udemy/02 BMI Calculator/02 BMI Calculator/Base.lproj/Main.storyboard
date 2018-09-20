@@ -44,67 +44,77 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9P-j4-ZzY">
-                                <rect key="frame" x="43.046991467671887" y="360" width="90.999999999999929" height="20.999999999999968"/>
+                                <rect key="frame" x="43.046991467671887" y="300" width="90.999999999999929" height="20.999999999999968"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qon-xy-paV">
-                                <rect key="frame" x="43.046991467671887" y="413" width="67.999999999999915" height="21.000000000000057"/>
+                                <rect key="frame" x="43.046991467671887" y="353" width="67.999999999999915" height="21.000000000000057"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZx-Gx-a0g">
-                                <rect key="frame" x="43.046991467671887" y="464" width="90.999999999999929" height="21.000000000000057"/>
+                                <rect key="frame" x="43.046991467671887" y="404" width="90.999999999999929" height="21.000000000000057"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkf-vj-Hyj">
-                                <rect key="frame" x="43.046991467671887" y="522" width="87.999999999999957" height="20.999999999999943"/>
+                                <rect key="frame" x="43.046991467671887" y="462" width="87.999999999999957" height="20.999999999999943"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ndH-SW-qr2">
-                                <rect key="frame" x="152.04699146767189" y="351" width="177.99999999999994" height="30"/>
+                                <rect key="frame" x="152.04699146767189" y="291" width="177.99999999999994" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yV-tG-7fE">
-                                <rect key="frame" x="152.04699146767189" y="459" width="177.99999999999994" height="30.000000000000057"/>
+                                <rect key="frame" x="152.04699146767189" y="399" width="177.99999999999994" height="30.000000000000057"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-Fk-Irg">
-                                <rect key="frame" x="152.04699146767189" y="517" width="177.99999999999994" height="29.999999999999972"/>
+                                <rect key="frame" x="152.04699146767189" y="457" width="177.99999999999994" height="29.999999999999972"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hk-4K-zyn">
-                                <rect key="frame" x="10" y="576" width="119" height="45"/>
+                                <rect key="frame" x="12.495193590011468" y="526" width="349.00000000000006" height="51.000000000000028"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Calculator"/>
+                                <color key="backgroundColor" red="0.33706761851055511" green="0.51764529477598176" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Calculator">
+                                    <color key="titleColor" red="0.88360042248259418" green="1" blue="0.98809181178444039" alpha="0.87970890410958902" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0e-UY-1Fy">
-                                <rect key="frame" x="152.04699146767189" y="404" width="177.99999999999994" height="30.000000000000057"/>
+                                <rect key="frame" x="152.04699146767189" y="344" width="177.99999999999994" height="30.000000000000057"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cxcxcx" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FZ-cJ-iWg">
+                                <rect key="frame" x="16" y="662" width="343" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.88059182359999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.71508011299740559" green="0.78170691523567404" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
