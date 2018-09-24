@@ -100,6 +100,9 @@
                                 <state key="normal" title="Calculator">
                                     <color key="titleColor" red="0.88360042248259418" green="1" blue="0.98809181178444039" alpha="0.87970890410958902" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculatorBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvY-nP-O2Y"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0e-UY-1Fy">
                                 <rect key="frame" x="152.04699146767189" y="344" width="177.99999999999994" height="30.000000000000057"/>
@@ -108,7 +111,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cxcxcx" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FZ-cJ-iWg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FZ-cJ-iWg">
                                 <rect key="frame" x="16" y="662" width="343" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -119,6 +122,14 @@
                         <color key="backgroundColor" red="0.71508011299740559" green="0.78170691523567404" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lbResult" destination="0FZ-cJ-iWg" id="J1T-9l-h77"/>
+                        <outlet property="sexSelected" destination="Sc1-eu-EAV" id="Tz8-Ru-pmU"/>
+                        <outlet property="txtYourAge" destination="c0e-UY-1Fy" id="ya7-f5-Wq8"/>
+                        <outlet property="txtYourHeight" destination="vOq-Fk-Irg" id="DLw-Hx-GRE"/>
+                        <outlet property="txtYourName" destination="ndH-SW-qr2" id="grz-lG-Ive"/>
+                        <outlet property="txtYourWeight" destination="1yV-tG-7fE" id="GOS-d7-2fK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
