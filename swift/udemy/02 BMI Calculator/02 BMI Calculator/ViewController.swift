@@ -10,6 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sexSelected: UISwitch!
+    @IBOutlet weak var txtYourName: UITextField!
+    
+    @IBOutlet weak var txtYourAge: UITextField!
+    
+    @IBOutlet weak var txtYourWeight: UITextField!
+    
+    @IBOutlet weak var txtYourHeight: UITextField!
+    
+    @IBOutlet weak var lbResult: UILabel!
+    
+    // declare input
+    var yourName: String = ""
+    var yourAge: Int = 0
+    var yourWeight: Int = 0
+    var yourHeight: Int = 0
+    var resultCalc: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +37,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
+    @IBAction func calculatorBMI(_ sender: UIButton) {
+        var result: Decimal
+        yourName = txtYourName.text!
+        yourAge = Int(txtYourAge.text!)!
+        yourWeight = Int(txtYourWeight.text!)!
+        yourHeight = Int(txtYourHeight.text!)!
+        
+        result = 50 + (0.75 * (yourHeight - 150)) + ((yourAge - 20) / 4)
+        resultCalc = "Your name \(result)\n"
+        
+        lbResult.text = resultCalc
+    }
+    
 }
 
