@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
     
     func calcBMI(age: Int, height: Int, weight: Int) -> Double {
-        return Double((age + height + weight) / 2)
+        return Double(weight) / (Double(age) * Double(height))
     }
     @IBAction func calculatorBMI(_ sender: UIButton) {
         yourName = txtYourName.text!
@@ -48,10 +48,18 @@ class ViewController: UIViewController {
         yourWeight = Int(txtYourWeight.text!)!
         yourHeight = Int(txtYourHeight.text!)!
         
-        result = calcBMI(age: 10, height: 20, weight: 30)
+        result = calcBMI(age: yourAge, height: yourHeight, weight: yourWeight)
+        if(result < 18.5){
+            resultCalc = "Can nang thap"
+        }
+        else if(result >= 18.5 && result <= 24.9){
+            resultCalc = "Binh thuong"
+        }
+        else if(result > 24.9 && result < 29.9){
+            resultCalc = "Tien beo phi"
+        }
         print(result)
-        resultCalc = "Your name \(result)\n"
-//
+        resultCalc = "Your name: \(yourName)\n - BMI: \(result)\n - Ket luan: \(resultCalc)"
         lbResult.text = resultCalc
     }
     
