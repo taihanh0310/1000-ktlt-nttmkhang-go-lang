@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     var yourWeight: Int = 0
     var yourHeight: Int = 0
     var resultCalc: String = ""
+    var result: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,17 +39,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func calcBMI(age: Int, height: Int, weight: Int) -> Double {
+        return Double((age + height + weight) / 2)
+    }
     @IBAction func calculatorBMI(_ sender: UIButton) {
-        var result: Decimal
         yourName = txtYourName.text!
         yourAge = Int(txtYourAge.text!)!
         yourWeight = Int(txtYourWeight.text!)!
         yourHeight = Int(txtYourHeight.text!)!
         
-        result = 50 + (0.75 * (yourHeight - 150)) + ((yourAge - 20) / 4)
+        result = calcBMI(age: 10, height: 20, weight: 30)
+        print(result)
         resultCalc = "Your name \(result)\n"
-        
+//
         lbResult.text = resultCalc
     }
     
