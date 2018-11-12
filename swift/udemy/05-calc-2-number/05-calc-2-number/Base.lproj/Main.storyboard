@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_5_calc_2_number" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tính tổng hai số" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTO-dm-xeS">
+                                <rect key="frame" x="15" y="35" width="345" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số thứ nhất" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsg-hG-nE6">
+                                <rect key="frame" x="15" y="115" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số thứ hai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TW6-ER-bvz">
+                                <rect key="frame" x="15" y="196" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kết quả" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ft-3E-CRD">
+                                <rect key="frame" x="15" y="277" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUI-uk-nXD">
+                                <rect key="frame" x="15" y="576" width="345" height="41"/>
+                                <color key="backgroundColor" red="0.21830661040613297" green="0.24662368485854516" blue="0.3333333432674408" alpha="0.10827803938356165" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="TÍNH TỔNG">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPressTinhTong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJg-Y5-7uQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập vào một số" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0F-XH-R36">
+                                <rect key="frame" x="15" y="146" width="345" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập vào một số" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LmG-9D-uis">
+                                <rect key="frame" x="15" y="227" width="345" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Ft-3E-CRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="0D0-GO-LVn"/>
+                            <constraint firstItem="Qsg-hG-nE6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="4Kz-I4-CxM"/>
+                            <constraint firstItem="XUI-uk-nXD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="69x-lu-AKe"/>
+                            <constraint firstItem="LmG-9D-uis" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="6Gb-ed-woo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T0F-XH-R36" secondAttribute="trailing" constant="15" id="6pA-oX-Wfa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XUI-uk-nXD" secondAttribute="bottom" constant="50" id="7Fe-En-qJF"/>
+                            <constraint firstItem="LmG-9D-uis" firstAttribute="top" secondItem="TW6-ER-bvz" secondAttribute="bottom" constant="10" id="CWo-Iy-PG1"/>
+                            <constraint firstItem="3Ft-3E-CRD" firstAttribute="top" secondItem="LmG-9D-uis" secondAttribute="bottom" constant="20" id="JHz-dR-hjV"/>
+                            <constraint firstItem="T0F-XH-R36" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="NqN-4H-DQd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qsg-hG-nE6" secondAttribute="trailing" constant="15" id="Okx-yF-poj"/>
+                            <constraint firstItem="MTO-dm-xeS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="T2b-Jh-eWi"/>
+                            <constraint firstItem="T0F-XH-R36" firstAttribute="top" secondItem="Qsg-hG-nE6" secondAttribute="bottom" constant="10" id="UaW-9G-GtT"/>
+                            <constraint firstItem="TW6-ER-bvz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="VJc-eF-LXC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ft-3E-CRD" secondAttribute="trailing" constant="15" id="VjT-YH-rzr"/>
+                            <constraint firstItem="MTO-dm-xeS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="XqI-za-jUu"/>
+                            <constraint firstItem="Qsg-hG-nE6" firstAttribute="top" secondItem="MTO-dm-xeS" secondAttribute="bottom" constant="50" id="Yhc-xP-14B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XUI-uk-nXD" secondAttribute="trailing" constant="15" id="bJL-e7-6F1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LmG-9D-uis" secondAttribute="trailing" constant="15" id="erO-NX-f05"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TW6-ER-bvz" secondAttribute="trailing" constant="15" id="hi9-26-dSK"/>
+                            <constraint firstItem="TW6-ER-bvz" firstAttribute="top" secondItem="T0F-XH-R36" secondAttribute="bottom" constant="20" id="kfV-n0-bZ0"/>
+                            <constraint firstItem="MTO-dm-xeS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="riL-uq-Yai"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MTO-dm-xeS" secondAttribute="trailing" constant="15" id="sIR-jO-yaI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbKetQua" destination="3Ft-3E-CRD" id="5WR-Nn-DsI"/>
+                        <outlet property="txtSoThuHai" destination="LmG-9D-uis" id="Y1D-bV-UCx"/>
+                        <outlet property="txtSoThuNhat" destination="T0F-XH-R36" id="vyU-Sp-CMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
