@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C6ADED7219B1881000FA8D5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6ADED6219B1881000FA8D5 /* Category.swift */; };
+		0C6ADEDA219B1A34000FA8D5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6ADED9219B1A34000FA8D5 /* DataService.swift */; };
 		EE2353AA219ACD8C0020F3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2353A9219ACD8C0020F3D9 /* AppDelegate.swift */; };
 		EE2353AC219ACD8C0020F3D9 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2353AB219ACD8C0020F3D9 /* CategoriesVC.swift */; };
 		EE2353AF219ACD8C0020F3D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2353AD219ACD8C0020F3D9 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C6ADED6219B1881000FA8D5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0C6ADED9219B1A34000FA8D5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		EE2353A6219ACD8C0020F3D9 /* 05-e-com-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-e-com-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2353A9219ACD8C0020F3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE2353AB219ACD8C0020F3D9 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -37,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C6ADED5219B1874000FA8D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C6ADED6219B1881000FA8D5 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C6ADED8219B19FF000FA8D5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C6ADED9219B1A34000FA8D5 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EE23539D219ACD8C0020F3D9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +76,9 @@
 		EE2353A8219ACD8C0020F3D9 /* 05-e-com-2 */ = {
 			isa = PBXGroup;
 			children = (
+				0C6ADED8219B19FF000FA8D5 /* Services */,
+				0C6ADED5219B1874000FA8D5 /* Model */,
 				EE2353BD219AD5FE0020F3D9 /* View */,
-				EE2353BC219AD5A20020F3D9 /* Model */,
 				EE2353BB219AD59A0020F3D9 /* Controller */,
 				EE2353A9219ACD8C0020F3D9 /* AppDelegate.swift */,
 				EE2353AD219ACD8C0020F3D9 /* Main.storyboard */,
@@ -74,13 +95,6 @@
 				EE2353AB219ACD8C0020F3D9 /* CategoriesVC.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		EE2353BC219AD5A20020F3D9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		EE2353BD219AD5FE0020F3D9 /* View */ = {
@@ -165,6 +179,8 @@
 				EE2353AC219ACD8C0020F3D9 /* CategoriesVC.swift in Sources */,
 				EE2353AA219ACD8C0020F3D9 /* AppDelegate.swift in Sources */,
 				EE2353BF219AD64D0020F3D9 /* CategoryCell.swift in Sources */,
+				0C6ADED7219B1881000FA8D5 /* Category.swift in Sources */,
+				0C6ADEDA219B1A34000FA8D5 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drcomgroup.hanh-udemy.-5-e-com-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -338,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drcomgroup.hanh-udemy.-5-e-com-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
