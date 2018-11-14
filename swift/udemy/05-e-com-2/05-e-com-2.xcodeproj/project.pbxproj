@@ -17,6 +17,7 @@
 		EE2353B1219ACD8D0020F3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2353B0219ACD8D0020F3D9 /* Assets.xcassets */; };
 		EE2353B4219ACD8D0020F3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2353B2219ACD8D0020F3D9 /* LaunchScreen.storyboard */; };
 		EE2353BF219AD64D0020F3D9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2353BE219AD64D0020F3D9 /* CategoryCell.swift */; };
+		EE2353C1219BBF090020F3D9 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2353C0219BBF090020F3D9 /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EE2353B3219ACD8D0020F3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE2353B5219ACD8D0020F3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE2353BE219AD64D0020F3D9 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		EE2353C0219BBF090020F3D9 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				EE2353AB219ACD8C0020F3D9 /* CategoriesVC.swift */,
+				EE2353C0219BBF090020F3D9 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2353C1219BBF090020F3D9 /* ProductsVC.swift in Sources */,
 				EE2353AC219ACD8C0020F3D9 /* CategoriesVC.swift in Sources */,
 				EE2353AA219ACD8C0020F3D9 /* AppDelegate.swift in Sources */,
 				EE2353BF219AD64D0020F3D9 /* CategoryCell.swift in Sources */,
@@ -344,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drcomgroup.hanh-udemy.-5-e-com-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drcomgroup.hanh-udemy.-5-e-com-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
