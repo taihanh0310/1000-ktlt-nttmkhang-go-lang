@@ -8,5 +8,7 @@ target '06-slack-clone-app' do
   use_frameworks!
 
   # Pods for 06-slack-clone-app
-
+	pod 'Alamofire'
+	pod 'SwiftyJSON'
+	pod 'Socket.IO-Client-Swift'
 end
