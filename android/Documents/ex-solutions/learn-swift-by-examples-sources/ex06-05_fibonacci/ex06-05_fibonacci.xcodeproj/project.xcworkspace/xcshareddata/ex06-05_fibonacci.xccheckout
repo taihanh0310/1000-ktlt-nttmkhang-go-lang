@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F9BBD55C-C6D1-42E1-BA01-25CA52C31BC6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ex06-05_fibonacci</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8393237C6E24710F4ACFBCCA04F7085DDCC782FA</key>
+		<string>itest2.com:/var/git/books/LearnSwiftProgrammingByExamples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sources/ex06-05_fibonacci/ex06-05_fibonacci.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8393237C6E24710F4ACFBCCA04F7085DDCC782FA</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>itest2.com:/var/git/books/LearnSwiftProgrammingByExamples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8393237C6E24710F4ACFBCCA04F7085DDCC782FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8393237C6E24710F4ACFBCCA04F7085DDCC782FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LearnSwiftProgrammingWithExamples</string>
+		</dict>
+	</array>
+</dict>
+</plist>
