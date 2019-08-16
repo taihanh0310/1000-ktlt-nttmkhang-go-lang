@@ -102,12 +102,40 @@ class Square: NamedShape {
     init(sideLength: Double, name:String){
         self.sideLength = sideLength
         super.init(name: name)
-        numberOfSides: 4
+        numberOfSides = 4
     }
     
+    func area() -> Double {
+        return sideLength * sideLength
+    }
+    
+    override func simpleDescription() -> String {
+        return "A Square with side of lenght \(sideLength)"
+    }
     
 }
 
+// test
+let testSquare = Square(sideLength: 5.2, name: "my test square")
+testSquare.area()
+testSquare.simpleDescription()
+
+class Circle: NamedShape{
+    var sideLength: Double
+    
+    init(sideLength: Double, name: String) {
+        self.sideLength = sideLength
+        super.init(name: name)
+    }
+    
+    func area() -> Double {
+        return sideLength * 3.14
+    }
+    
+    override func simpleDescription() -> String {
+        return "A cicle with side of lengt \(sideLength)"
+    }
+}
 
 /////////////OBJECTTS AND CLASSES/////////////////
 
